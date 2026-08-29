@@ -2,16 +2,7 @@ from collections import defaultdict
 from datetime import timedelta, datetime
 
 _EPOCH = datetime(1970, 1, 1)
-
-# Amounts differing by less than this are treated as float/rounding noise,
-# not a real discrepancy. Chosen after finding a genuine 2-cent rounding
-# artifact in the data (ORD-1902) that should not be reported as a real
-# revenue-at-risk item.
 AMOUNT_TOLERANCE = 0.05
-
-# Two settled charges against the same order within this window, for the
-# same amount, are treated as a duplicate charge (e.g. a retried webhook)
-# rather than two legitimate separate purchases re-using an id.
 DUPLICATE_CHARGE_WINDOW = timedelta(hours=48)
 
 
