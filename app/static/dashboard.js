@@ -330,7 +330,6 @@ el("upload-form").addEventListener("submit", async (e) => {
   }
 });
 
-// --- Filters / pagination / run selector ---
 el("search-input").addEventListener(
   "input",
   debounce((e) => {
