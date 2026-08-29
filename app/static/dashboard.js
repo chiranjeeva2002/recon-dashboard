@@ -8,6 +8,7 @@ const TYPE_LABELS = {
   PARTIAL_REFUND_SHORTFALL: "Partial refund shortfall",
   UNSETTLED_PAYMENT: "Unsettled payment",
   FAILED_PAYMENT_ON_COMPLETED_ORDER: "Failed payment, order completed",
+  REFUND_ON_COMPLETED_ORDER: "Refund on completed order",
 };
 
 const PAGE_SIZE = 10;
